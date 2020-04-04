@@ -36,7 +36,7 @@ function mixerOnlineV2(){
 	$paramtrim = rtrim(implode(',', $parameter), ',');
 	$users = array("ice_poseidon", "LunaLaVinci", "RubylaRouge", "GlamVonGrimm", "Covent", "ViciouZz"); // you could get users from your database
         $uao = new ArrayObject($users);
-	$uao->asort(); // this is really needed but could be useful for other things.	
+	$uao->asort(); // this isnt really needed but could be useful for other things.	
 	foreach ($uao as $key) {
 	$channel_URL = $Mixer_API_Url . ''.$key.'?' . $paramtrim; 	
 	$json_details = json_decode(file_get_contents($channel_URL), true); 
