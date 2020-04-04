@@ -17,4 +17,10 @@ function mixeronline($mixername) {
 	}
 }
 mixeronline('Ice_poseidon'); // Change to whatever username you want ...
-//////
+
+//////////loop through multiple users //////////
+$users = ["ice_poseidon", "LunaLaVinci", "RubylaRouge", "GlamVonGrimm", "Covent", "ViciouZz"]; // you could also get user names from your database
+foreach ($users as $user)
+{ 
+ echo mixeronline($user);
+}
