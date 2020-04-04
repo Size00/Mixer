@@ -11,9 +11,9 @@ function mixeronline($mixername) {
 	$viewersCurrent = $json_details['viewersCurrent'];
 	$online = $json_details['online'];
     if($online == 'false'){
-		echo 'Online';
+		echo $token.' is Online <br/>';
 	}else{
-		echo 'Offline';
+		echo $token.' is Offline <br/>';
 	}
 }
 mixeronline('Ice_poseidon'); // Change to whatever username you want ...
