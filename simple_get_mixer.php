@@ -13,4 +13,4 @@ print_r ($result);
 mixer();
 
 // You could use this function to make simple get request but need your own Authorization <token> 
-// later ill use scopes and add PUT request in another script
+// later ill use scopes and add POST request in another script
